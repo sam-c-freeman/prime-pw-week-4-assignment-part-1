@@ -61,14 +61,13 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 //    array is empty, return `undefined`.
 
 function getLast( array ) {
-  if(array.length >= 1){
-    let lastElement = array[array.length -1];
-    return lastElement
-} 
-else {
-  return undefined;
+ return array?.pop();
 }
-}
+
+//My above solution works but I am unsure if this is a good approach.  I believe pop changes the array permanently.  I tried to use 
+//array?.[array.length -1] and it gave me a syntax error.
+//I also tried both of these solutions without the ? and it would throw an error because it couldn't run 
+//.pop or .length on the undefined function.  Would love feedback on this!
 
 console.log(getLast(['bob', 'sue', 'tom']));
 console.log(getLast());
