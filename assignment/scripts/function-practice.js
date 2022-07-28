@@ -76,20 +76,23 @@ console.log(getLast());
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  for(let i = 0; i < array.length; i++){
-    if(array[i] === value) {
-      console.log(array[i]);
-      return true;
-    }
-      else{
-        console.log(array[i]);
-        return false
-      }
-  }
-}
+// function find( value, array ){
+//   for(let i = 0; i < array.length; i++){
+//     let result = false;
+//     if(value === array[i]) {
+//       result = true;
+//       console.log(array[i]);
+//       return true;
+//     } else if(result = false){
+//       return false;
+//     }
+    
+//     }
+//   }
 
-console.log(find(0, [1, 3, 4, 0, 3]));
+
+// let testArray = [1, 3, 4, 3]
+// console.log(find(0, testArray));
 
 // ----------------------
 // Stretch Goals
@@ -97,7 +100,12 @@ console.log(find(0, [1, 3, 4, 0, 3]));
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  if(string[0] === letter){
+    return true;
+  } 
+  else{
+    return false;
+  }
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
