@@ -76,22 +76,18 @@ console.log(getLast());
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
 // function find( value, array ){
 //   for(let i = 0; i < array.length; i++){
-//     let result = false;
 //     if(value === array[i]) {
-//       result = true;
-//       console.log(array[i]);
 //       return true;
-//     } else if(result = false){
+//     }
 //       return false;
-//     }
-    
-//     }
 //   }
+// }
 
 
-// let testArray = [1, 3, 4, 3]
+// let testArray = [0, 1, 3, 4, 3]
 // console.log(find(0, testArray));
 
 // ----------------------
@@ -111,15 +107,36 @@ console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
-  // TODO: loop to add items
-  return sum;
+
+
+let sumArray = [1, 2, 3, 6];
+
+function sumAll(array) {
+  let sum = 0;
+  for(let i = 0; i < array.length; i++){
+    sum += array[i];
+  }
+  return sum
 }
+
+// TODO: loop to add items
+
+
+console.log(sumAll(sumArray));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+
+let sampleArray = [1, -3, 0, 2, 5, -2];
+
+function positveNumbers (array){
+  for(let i = 0; i < array.length; i++){
+    if(array[i] > 0){
+      
+    }
+  }
+}
 
 
 
