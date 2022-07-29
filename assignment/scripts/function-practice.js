@@ -77,18 +77,21 @@ console.log(getLast());
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
+
 function find( value, array ){
   for(let i = 0; i < array.length; i++){
-  }
-   if(value === array[i]) {
-      return true;
+    if(value === array[i]) {
+      return true; 
     }
-      return false;
+  }
+  return false;
 }
 
+let testArray = [1, 3, 0, 4, 3]
+console.log(find(9, testArray));
+console.log(find(4, testArray));
 
-let testArray = [0, 1, 3, 4, 3]
-console.log(find(0, testArray));
+
 
 
 
