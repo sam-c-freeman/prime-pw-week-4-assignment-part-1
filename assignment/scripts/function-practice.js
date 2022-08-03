@@ -153,3 +153,18 @@ console.log(positveNumbers(sampleArray));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//Write a function that checks the sum of two numbers.  If less than 100, return true.
+//If not, return false.
+
+
+function lessThan100(a, b) {
+	let sum = a + b;
+	if (sum < 100){
+		return true;
+	}
+	return false;
+}
+
+//I originally wrote it with an else statement but this also works.  Is one or the other
+//best practice?  This is slightly less code.
